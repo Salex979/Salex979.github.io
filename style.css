@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+body, h1, h2, h3, a, p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    background-color: #EAC47E;
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+}
+.icon{
+    width: 37px;
+    height: 37px;
+    margin-right: 36px;
+}
+.icon-tickets{
+    width: 42px;
+    height: 42px;
+}
+
+.banner{
+    background-image: url(img/museum.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.banner-container{
+    padding-bottom: 95px;
+    padding-top: 194px;
+}
+.banner-title{
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+.banner-text{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.exhibitions-title{
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #E9A379;
+}
+.exhibition-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.exhibition-item{
+    width: 30%;
+    flex-grow: 1;
+    position: relative;
+}
+.exhibition-item:hover>.exhibition-text {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #00000052;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.exhibition-text{
+    opacity: 0;
+    color: white;
+
+}
+.tickets{
+    background-color: #E9A379;
+    color: white;
+}
+.poster{
+    background-color: #EAC47E;
+    color: white;
+}
+.souvenir{
+    background-color: #E9A379;
+    color: white;
+}
+.virtual-exhibition{
+    background-color: #EAC47E;
+    color: white;
+}
+.quest{
+    background-color: #ACAE8C;
+    color: white;
+}
+.review{
+    background-color: #EAC47E;
+    color: white;
+}
+
+.swiper-container{
+    height: 350px;
+}
+.slide-img{
+    height: 350px;
+    width: 600px;
+}
+.swiper-button-next{
+    background-color: #E9A379;
+    width: 45px;
+    height: 45px;
+    top: auto;
+    bottom: 0;
+    border-radius: 50%;
+    left: calc(50%-50px);
+    color: white;
+}
+.swiper-button-prev{
+    background-color: #E9A379;
+    width: 45px;
+    height: 45px;
+    top: auto;
+    bottom: 0;
+    border-radius: 50%;
+    left: calc(50%-50px);
+    color: white;
+}
+
+.footer{
+    background-color: #ACAE8C;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title{
+    margin-bottom: 20px;
+    
+}
+.net{
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+.time{
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+.contact{
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+.adress{
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+.telegram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.telegram-icon{
+    width: 40px;
+    height: 40px;
+}
+.vk{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.vk-icon{
+    width: 40px;
+    height: 40px;
+}
