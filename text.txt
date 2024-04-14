@@ -1,0 +1,25 @@
+let cvs = document.querySelector("#flappybird");
+let ctx = cvs.getContext("2d");
+
+
+let bird = document.createElement('img');
+bird.src = "images/bird.png";
+let bg = document.createElement('img');
+bg.src = "images/bg.png";
+let pipeUp = document.createElement('img');
+pipeUp.src = "images/pipeUp.png";
+ctx.drawImage(bg, 0, 0);
+let xPos = 50;
+let yPos = 250;
+let xPosPipe = 288;
+let yPosPipe = 0;
+function draw(){
+    ctx.drawImage(bg, 0, 0);
+    ctx.drawImage(pipeUp, xPosPipe, yPosPipe);
+    ctx.drawImage(bird, xPos, yPos);
+    xPos+=2;
+    xPosPipe -=1;
+    
+    requestAnimationFrame(draw);
+}
+draw();
